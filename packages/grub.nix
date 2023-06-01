@@ -1,12 +1,13 @@
 { config, pkgs, ... }:
 {
-  boot.loader.grub.enable = true;
-  boot.loader.grub.version = 2;
-  boot.loader.grub.device = "nodev";
-  boot.loader.grub.efiSupport = true;
-  boot.loader.grub.efiInstallAsRemovable = true;
-  boot.loader.grub.useOSProber = true;
-
+  boot.loader.grub = {
+    enable = true;
+    version = 2;
+    device = "nodev";
+    efiSupport = true;
+    efiInstallAsRemovable = true;
+    useOSProber = true;
+    };
   # Looks
   boot.loader.grub.theme = pkgs.stdenv.mkDerivation {
   pname = "distro-grub-themes";
