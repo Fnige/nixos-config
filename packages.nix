@@ -13,11 +13,13 @@ in {
     firefox
     unstable.vscode
     unstable.spotify
-    unstable.armcord
     unstable.vivaldi
     unstable.jetbrains.idea-community
     unstable.obsidian
     unstable.git
+    (unstable.discord.override { withVencord = true; withOpenASAR = true; })
+    unstable.xdg-utils
+    neofetch
   ];
 }
 
