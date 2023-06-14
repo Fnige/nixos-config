@@ -20,6 +20,8 @@ in {
     (unstable.discord.override { withVencord = true; withOpenASAR = true; })
     unstable.xdg-utils
     neofetch
+    unstable.blockbench-electron
+    flite
   ];
 }
 
